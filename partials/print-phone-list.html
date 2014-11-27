@@ -2,5 +2,5 @@
     <div  ng-repeat="phone in phones | filter:query | orderBy:orderProp">
       <p><a href="#/phones/{{phone.id}}" class="title"><img ng-src="{{phone.imageUrl}}" ></a></p>
       <a class="category" href="#/phones/{{phone.id}}">{{phone.name}}</a> <br/>
-        <p>{{phone.snippet}}</p>
+        <p>{{phone.price}}</p>
     </div>
