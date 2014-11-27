@@ -1,0 +1,25 @@
+    <div class="row">
+        <div class="col-md-12 col-sm-12  col-xs-12 col-lg-12">
+            <div class="row">
+                <div class="col-md-12 col-sm-12  col-xs-12 col-lg-12">
+                    <h4 class="title">
+                        <span class="nav navbar-nav"><span class="text"><span class="line">Популярные  <strong>товары</strong></span></span></span>
+									<span class="nav navbar-nav pull-right">
+										<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
+									</span>
+                    </h4>
+
+                    <div id="myCarousel" class="myCarousel carousel slide">
+                        <div class="carousel-inner">
+                            <div class="active item">
+                                <div class="col-md-3 phones" ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+                                    <p><a href="#/phones/{{phone.id}}" class="title"><img ng-src="{{phone.imageUrl}}" class="img-thumbnail"></a></p>
+                                    <a class="category" href="#/phones/{{phone.id}}">{{phone.name}}</a> <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
