@@ -23,9 +23,17 @@ phonecatApp.config(['$routeProvider',
         controller: 'PhoneDetailCtrl'
       }).
         when('/cart', {
-            templateUrl: 'partials/cart.html',
-            controller: 'Cart'
+            templateUrl: 'partials/cart.html'
         }).
+        when('/ctrl', {
+            templateUrl: 'partials/test.html',
+            controller: 'ctrl'
+        }).
+        when('/print', {
+            templateUrl: 'partials/print-phone-list.html',
+            controller: 'PrintPhoneListCtrl'
+        }).
+
       otherwise({
         redirectTo: '/phones'
       });
